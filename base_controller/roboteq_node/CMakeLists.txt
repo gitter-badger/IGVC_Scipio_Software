@@ -29,5 +29,5 @@ add_executable(roboteq_node src/rosRoboteqDrv/main.cpp src/rosRoboteqDrv/rosRobo
 target_link_libraries(roboteq_node ${catkin_LIBRARIES})
 set_target_properties(roboteq_node PROPERTIES COMPILE_FLAGS -g)
 
-
+add_dependencies(roboteq_node ${catkin_EXPORTED_TARGETS})
 #add_dependencies(keyboard_teleop base_controller_gencpp)
